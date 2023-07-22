@@ -1,17 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React, { Fragment } from "react"; // Import React and its dependencies
+import ReactDOM from "react-dom/client"; // Import ReactDOM for rendering
+import App from "./App"; // Import the main component of the application
+import { BrowserRouter } from "react-router-dom"; // Import BrowserRouter for routing
+import AuthContext from "./Context/AuthContext"; // Import the AuthContext (a custom context for authentication)
+import {} from "react-hot-toast"; // Import something from the "react-hot-toast" library (might be used elsewhere in the application)
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// Create a React root using the experimental createRoot API
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+// Render the main component within the BrowserRouter and AuthContext
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <Fragment>
+    <BrowserRouter>
+      <AuthContext>
+        <App />
+      </AuthContext>
+    </BrowserRouter>
+  </Fragment>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

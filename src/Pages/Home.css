@@ -1,0 +1,511 @@
+:root {
+  --primarycolor: #0067ff;
+  --yellowcolor: #feb60d;
+  --purplecolor: #9771ff;
+  --irisbluecolor: #01b5c5;
+  --headingcolor: #181a1e;
+  --textcolor: #4e545f;
+
+  --panel-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.section-hero {
+  width: 100vw;
+  height: 90vh;
+  background-image: url("../Asset/Images/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-content {
+  width: 40%;
+  height: 100vh;
+}
+.hero-content > div > h2 {
+  font-size: 2.5rem;
+  font-family: sans-serif;
+  padding: 7px;
+  text-align: center;
+  margin-top: 40px;
+  user-select: none;
+  color: var(--headingcolor);
+}
+.hero-content > div > p {
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  padding: 7px;
+  text-decoration: wavy;
+  margin-top: 20px;
+  color: var(--textcolor);
+}
+.hero-content > div > button {
+  padding: 25px;
+  font-size: larger;
+  border-radius: 30px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+  background-color: var(--primarycolor);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+}
+.exprience-section {
+  display: flex;
+  margin-top: 35px;
+  user-select: none;
+}
+.exprience-section .Year-of-exprience > h3 {
+  font-size: x-large;
+  font-family: sans-serif;
+}
+.exprience-section .exprience-line1 {
+  width: 55px;
+  border-radius: 19%;
+  height: 4px;
+  background: linear-gradient(135deg, #00ffbf, #9be217);
+  margin-top: -7px;
+  margin-bottom: 10px;
+}
+.exprience-section .Year-of-exprience .text {
+  font-weight: 400;
+  font-family: sans-serif;
+  font-size: large;
+}
+.exprience-section .clinicLoction > h3 {
+  font-size: x-large;
+  font-family: sans-serif;
+}
+.exprience-section .clinicLoction .exprience-line2 {
+  width: 55px;
+  border-radius: 19%;
+  height: 4px;
+  background: linear-gradient(135deg, #6a90e0, #322147);
+  margin-top: -7px;
+  margin-bottom: 10px;
+}
+.exprience-section .clinicLoction .text {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: large;
+}
+.exprience-section .satisfaction > h3 {
+  font-size: x-large;
+  font-family: sans-serif;
+}
+.exprience-section .satisfaction .exprience-line3 {
+  width: 55px;
+  border-radius: 19%;
+  height: 4px;
+  background: linear-gradient(135deg, #e3eaf8, #a37bd4);
+  margin-top: -7px;
+  margin-bottom: 10px;
+}
+.exprience-section .satisfaction {
+  margin-left: 60px;
+}
+.exprience-section .clinicLoction {
+  margin-left: 40px;
+}
+.exprience-section .satisfaction .text {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: large;
+}
+.hero-content > div > button:hover {
+  border-radius: 5px;
+}
+.hero-img-section {
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  cursor: pointer;
+}
+.hero-img-section .big-img .Big-img {
+  width: 280px;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+  border-radius: 20px;
+}
+.hero-img-section .big-img .Big-img:hover {
+  width: 275px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.hero-img-section .small-img .small-img1 {
+  width: 190px;
+  margin-left: 22px;
+  margin-top: 40px;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+}
+.hero-img-section .small-img .small-img1:hover {
+  width: 180px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero-img-section .small-img .small-img2 {
+  width: 220px;
+  margin-left: 40px;
+  margin-top: 10px;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+  border-radius: 20px;
+}
+.hero-img-section .small-img .small-img2:hover {
+  width: 210px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* service section  */
+
+.Service-section {
+  width: 100vw;
+  height: 90vh;
+  padding: 40px;
+}
+.service-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.service-section {
+  width: 500px;
+}
+.service-section > h1:nth-child(1) {
+  margin-top: 30px;
+}
+.service-section > h1 {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  color: var(--headingcolor);
+  user-select: none;
+}
+.service-section > p {
+  color: var(--textcolor);
+  text-align: center;
+  margin-top: 20px;
+  user-select: none;
+}
+
+/* button section */
+.button-section-service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-family: sans-serif;
+  gap: 2rem;
+  margin-top: 20px;
+}
+.arrow-service {
+  padding: 10px;
+  border: none;
+  border-radius: 40%;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.arrow-service:hover {
+  border-radius: 50%;
+}
+.arrow-service > img {
+  width: 30px;
+  user-select: none;
+}
+.button-section-service .find-a-doctor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.button-section-service .find-a-doctor > img {
+  width: 150px;
+  user-select: none;
+}
+.button-section-service .find-a-doctor > h3 {
+  font-size: x-large;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.button-section-service .find-a-doctor > p {
+  font-family: sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+.button-section-service .find-loction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 10px;
+}
+.button-section-service .find-loction > img {
+  width: 190px;
+  user-select: none;
+}
+.button-section-service .find-loction > h3 {
+  font-size: x-large;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.button-section-service .find-loction > p {
+  font-family: sans-serif;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.button-section-service .book-apoi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 10px;
+}
+.button-section-service .book-apoi > img {
+  width: 190px;
+  user-select: none;
+}
+.button-section-service .book-apoi > p {
+  font-family: sans-serif;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.button-section-service .book-apoi > h3 {
+  font-size: x-large;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .section-hero {
+    width: 100vw;
+    height: 1240px;
+  }
+  .hero-container {
+    flex-direction: column;
+  }
+  .hero-content {
+    width: 90%;
+    height: 620px;
+  }
+  .hero-content > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    margin-top: 20px;
+  }
+  .hero-content > div > h2 {
+    font-size: xx-large;
+    font-family: sans-serif;
+    text-transform: capitalize;
+  }
+  .hero-content > div > p {
+    margin-top: 20px;
+    font-size: medium;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  .hero-content > div > button {
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: #0067ff;
+    color: white;
+    font-size: medium;
+  }
+  .exprience-section .Year-of-exprience {
+    padding: 1rem;
+  }
+  .exprience-section .Year-of-exprience > h3 {
+    font-size: x-large;
+  }
+  .exprience-section .Year-of-exprience .exprience-line1 {
+    width: 55px;
+    border-radius: 19%;
+    height: 4px;
+    background: linear-gradient(135deg, #ffff00, #837214);
+    margin-top: -7px;
+    margin-bottom: 10px;
+  }
+  .exprience-section .clinicLoction > h3 {
+    font-size: 1.5rem;
+  }
+  .exprience-section .clinicLoction .exprience-line2 {
+    width: 55px;
+    border-radius: 19%;
+    height: 4px;
+    background: linear-gradient(135deg, #00ffbf, #6692cc);
+    margin-top: -7px;
+    margin-bottom: 10px;
+  }
+  .exprience-section .satisfaction {
+    padding: 1rem;
+    margin-left: 12px;
+  }
+  .exprience-section .satisfaction > h3 {
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight: 500;
+  }
+  .exprience-section .satisfaction .exprience-line3 {
+    width: 55px;
+    border-radius: 19%;
+    height: 4px;
+    background: linear-gradient(135deg, #00ffbf, #691483);
+    margin-top: -7px;
+    margin-bottom: 10px;
+  }
+  .hero-img-section {
+    width: 90%;
+    height: 620px;
+    flex-direction: column;
+    margin-top: 130px;
+  }
+  .hero-img-section .big-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-img-section .big-img .Big-img {
+    width: 250px;
+    height: 350px;
+  }
+  .hero-img-section .small-img {
+    gap: 1rem;
+    display: flex;
+    margin-top: 10px;
+  }
+  .hero-img-section .small-img .small-img1 {
+    /* width: 150px;
+    margin-left: -10px; */
+    display: none;
+  }
+  .hero-img-section .small-img .small-img2 {
+    display: none;
+  }
+
+  /* service section for mobile */
+
+  .Service-section {
+    width: 100%;
+    height: 1590px;
+  }
+  .service-section > h1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: var(--headingcolor);
+    user-select: none;
+  }
+  .service-section > p {
+    color: var(--textcolor);
+    text-align: center;
+    margin-top: 20px;
+    user-select: none;
+  }
+  .service-section {
+    width: 300px;
+  }
+
+  /* button section */
+
+  .button-section-service {
+    margin-top: 100px;
+    flex-direction: column;
+  }
+  .button-section-service .find-a-doctor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+  }
+  .button-section-service .find-a-doctor > img {
+    width: 130px;
+    margin-bottom: 20px;
+  }
+  .button-section-service .find-a-doctor > h3 {
+    font-size: x-large;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    color: var(--headingcolor);
+  }
+  .button-section-service .find-a-doctor > p {
+    font-family: sans-serif;
+    color: var(--textcolor);
+    text-align: center;
+  }
+  .arrow-service {
+    padding: 5px;
+    border: none;
+    border-radius: 40%;
+    margin: 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  }
+  .arrow-service > img {
+    width: 40px;
+  }
+
+  .button-section-service .find-loction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+  }
+  .button-section-service .find-loction > img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  .button-section-service .find-loction > h3 {
+    font-size: x-large;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    color: var(--headingcolor);
+  }
+  .button-section-service .find-loction > p {
+    font-family: sans-serif;
+    color: var(--textcolor);
+    text-align: center;
+  }
+  .button-section-service .book-apoi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+  }
+  .button-section-service .book-apoi > img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  .button-section-service .book-apoi > h3 {
+    font-size: x-large;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    color: var(--headingcolor);
+  }
+  .button-section-service .book-apoi > p {
+    font-family: sans-serif;
+    color: var(--textcolor);
+    text-align: center;
+  }
+}

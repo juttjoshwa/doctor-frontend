@@ -1,0 +1,138 @@
+:root {
+  --primarycolor: #0067ff;
+  --yellowcolor: #feb60d;
+  --purplecolor: #9771ff;
+  --irisbluecolor: #01b5c5;
+  --headingcolor: #181a1e;
+  --textcolor: #4e545f;
+
+  --panel-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.our-servive-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our-text-section h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-top: 155px;
+  font-weight: 900;
+  text-align: center;
+  color: var(--headingcolor);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.our-servive-section h1:hover {
+  font-size: 2.4rem;
+  color: #5b606b;
+}
+.our-text-section > p {
+  text-align: center;
+  color: var(--textcolor);
+  /* width: 522px; */
+}
+.Card-container {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.Card-section-our1 {
+  display: flex;
+  gap: 5rem;
+}
+.Card-section-our2 {
+  display: flex;
+  gap: 5rem;
+}
+.Card-section-our1 .card1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 250px;
+}
+.Card-section-our2 .card4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 250px;
+}
+.Card-section-our1 .card1 > h3 {
+  font-size: x-large;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.Card-section-our2 .card4 > h3 {
+  font-size: x-large;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.Card-section-our2 {
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .our-servive-section {
+    width: 100vw;
+    height: 1260px;
+  }
+  .Card-container {
+    margin-top: 5rem;
+    flex-direction: row;
+  }
+  .our-text-section h1 {
+    text-align: center;
+    font-size: 2rem;
+    width: 350px;
+  }
+  .our-text-section > p {
+    text-align: center;
+    width: 350px;
+  }
+  .Card-container {
+    display: flex;
+    gap: 3rem;
+  }
+  .Card-section-our1 {
+    flex-direction: column;
+  }
+  .Card-section-our2 {
+    flex-direction: column;
+  }
+
+  .Card-section-our1 .card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 250px;
+  }
+
+  .Card-section-our2 .card4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 250px;
+  }
+  .Card-section-our2 .card5 {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+  }
+  .Card-section-our2 .card6 {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+  }
+}
